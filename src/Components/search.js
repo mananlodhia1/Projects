@@ -48,7 +48,7 @@ class Search extends Component {
       <div>
         <div className="d-flex justify-content-center mt-5">
           {" "}
-          <h1 className="title">Search</h1>
+          <h1 className="title">Search Books</h1>
         </div>
         <Container className="d-flex justify-content-center mt-5">
           <div className="searchInputDiv">
@@ -68,7 +68,7 @@ class Search extends Component {
                 )}
               </div>
           </div>
-          
+
           {/*hides unmathced items*/}
           {this.state.searchData.length != 0 && (
             <div className="dataResult">
