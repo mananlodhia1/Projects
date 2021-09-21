@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Card, Row, Col } from "react-bootstrap";
 import data from "./Data.json";
-import { FaAddressBook, FaBeer, FaSearch, FaTimes } from 'react-icons/fa';
+import { FaSearch, FaTimes } from "react-icons/fa";
 
 class Search extends Component {
   constructor() {
@@ -60,17 +60,16 @@ class Search extends Component {
               className="searchInput"
             />
             <div className="searchIcon">
-                {this.state.searchData.length === 0 ? (
-                 <FaSearch />
-                ) : (
-                  <FaTimes id="clearBtn" onClick={this.handleClearSearch} />
-               
-                )}
-              </div>
+              {this.state.searchData.length === 0 ? (
+                <FaSearch />
+              ) : (
+                <FaTimes id="clearBtn" onClick={this.handleClearSearch} />
+              )}
+            </div>
           </div>
 
           {/*hides unmathced items*/}
-          {this.state.searchData.length != 0 && (
+          {/* {this.state.searchData.length != 0 && (
             <div className="dataResult">
               {this.state.searchData.map((value, key) => {
                 return (
@@ -84,8 +83,30 @@ class Search extends Component {
                 );
               })}
             </div>
-          )}
+          )} */}
         </Container>
+
+        {/* Display data in card form */}
+        <Row className="p-3 my-3 mt-4">
+          {this.state.searchData.map((value, key) => {
+            return (
+              <Col sm={12} md={6} lg={3} xl={3}>
+                <Card className="mt-4">
+                  <Card.Header>Featured</Card.Header>
+                  <Card.Body>
+                    <a className="dataItem" href={value.link}>
+                      <p>
+                        {value.title}
+                        <br />
+                        <small className="text-muted">{value.year}</small>
+                      </p>
+                    </a>
+                  </Card.Body>
+                </Card>
+              </Col>
+            );
+          })}
+        </Row>
       </div>
     );
   }

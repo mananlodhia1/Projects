@@ -7,6 +7,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from "./Components/search.js";
 
+
 function App() {
   return (
    <Router>
