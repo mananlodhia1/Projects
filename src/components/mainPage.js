@@ -2,9 +2,7 @@ import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import Footer from "./footer";
 import HeaderNav from "./HeaderNav";
-import ModalOne from "./modal"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDesktop, faKeyboard } from '@fortawesome/free-solid-svg-icons'
+import { TooltipOne, TooltipTwo, TooltipThree } from "./tooltip";
 
 function MainPage() {
   return (
@@ -20,15 +18,17 @@ function MainPage() {
           </Col>
           <Col className="d-flex justify-content-center">
             <div className="position-relative">
-            <div >
-            <ModalOne /></div>
+              <div>
+                <TooltipOne />
+              </div>
 
-            <div id="circleDouble"> 
-            <span className="circle"><FontAwesomeIcon id="icons" icon={faKeyboard} /></span>
-           <span className="circle"><FontAwesomeIcon id="icons" icon={faDesktop} /></span>
-           </div>
-           </div>
-        
+              <div id="circleDouble">
+                <TooltipTwo />
+                <TooltipThree />
+                {/* <span className="circle"><FontAwesomeIcon id="icons" icon={faKeyboard} /></span>
+           <span className="circle"><FontAwesomeIcon id="icons" icon={faDesktop} /></span> */}
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
