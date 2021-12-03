@@ -32,7 +32,8 @@ class Search extends Component {
 
     //if the input has value then add that value to searchData[]
     if (seachedItem === "") {
-      this.setState({ searchData: [] });
+      // this.setState({ searchData: [] });
+      this.setState({ searchData: newFilter});
     } else {
       this.setState({ searchData: newFilter });
     }
