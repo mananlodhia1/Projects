@@ -1,0 +1,146 @@
+body {
+  /* background-color: white !important; */
+  background: white !important;
+  height: 100vh;
+}
+
+.logo {
+  color: #0aab47;
+}
+.title {
+  color: black;
+}
+input {
+  color: black;
+}
+input:focus {
+  outline: none;
+}
+.darkTheme {
+  color: black;
+}
+.lightTheme {
+  color: white;
+}
+
+.divider {
+  color: white;
+  background-color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+.card {
+  background-color: white !important;
+}
+.form-floating > label {
+  color: black;
+}
+
+.navbar {
+  background-color: #091f2c;
+}
+
+.navbar-nav .nav-link {
+  /* padding-left: 1rem !important; */
+  /* padding-right: 1rem !important; */
+  /* border-top: 1px solid transparent; */
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0aab47 !important;
+  /*  background-color: black;
+  border-top: 1px solid #0aab47; */
+}
+
+.navbar .container {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.dropdown-menu {
+  background-color: black !important;
+}
+
+a.dropdown-item:hover {
+  background-color: transparent;
+  color: #0aab47 !important;
+}
+
+.main-footer {
+  color: white;
+  background-color: #091f2c;
+  margin-top: auto;
+  bottom: 0;
+  /* height:20vh; */
+  height: fit-content;
+}
+
+.bodyContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  height: fit-content;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  background-color: #0aab47;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle:hover {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05, 1.05);
+  transition: all 0.2s;
+}
+
+#circleDouble Span:last-child {
+  margin-left: 0.5rem;
+}
+
+#icons {
+  position: absolute;
+  color: white;
+}
+
+.brandIcon {
+  color: white;
+}
+.brandIcon:hover {
+  color: #0aab47;
+}
+.sectionOne {
+  background-color: #e1e5ee;
+  padding: 10rem;
+}
+
+.sectionTwo {
+  background-color: white;
+  text-align: center;
+  padding: 8rem;
+}
+.sectionThree {
+  background-color: #e1e5ee;
+  text-align: center;
+  padding: 8rem;
+  height: fit-content !important;
+}
+
+.sectionLogin {
+  background-color: #e1e5ee;
+}
+
+.box {
+  background-color: rgba(219, 208, 208, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+}
